@@ -12,7 +12,11 @@
         <div class="login-bg">
             <div class="login-username">
                 <h5>Username:</h5>
-                <input name="q" placeholder="Enter your username">
+                <input type="username" placeholder="Enter your username">
+            </div>
+            <div class="login-password">
+                <h5>Password:</h5>
+                <input type="password" placeholder="Enter your password">
             </div>
         </div>
     </body>
