@@ -1,0 +1,23 @@
+body{
+    background-color: #CADEE7;
+    margin: none;
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+.login-bg{
+    border-radius: 1.5rem;
+    /*border: 2px darkgray solid;*/
+    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.2);
+    align-self: center;
+    justify-content: center;
+    z-index: 10;
+    float: absolute;
+    background-color: #95C9E7;
+    width: 20rem;
+    height: 25rem;
+}
+.login-username{
+    margin: none;
+    text-align: center;
+    align-items: center;
+}
