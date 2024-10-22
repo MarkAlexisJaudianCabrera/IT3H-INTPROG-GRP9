@@ -1,0 +1,11 @@
+.VisMis-title{
+    text-align: center;
+}
+.VisMis-title h4{
+    font-size: 3rem;
+}
+.VisMis-desc p{
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 90%;
+}

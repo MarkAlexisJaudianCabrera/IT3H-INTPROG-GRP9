@@ -1,0 +1,21 @@
+@import url("all-colors-style.css");
+.btn-log-sign{
+    color: var(--lm-white-color);
+    background-color: var(--transparent-color);
+    font-weight: bold;
+    size: 1rem;
+    border-radius: .5rem;
+    border: var(--lm-white-color) 2px solid;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+    margin: 1.5rem 1rem;
+    float: right;
+}
+.btn-log-sign:hover{
+    cursor: pointer;
+    color: var(--lm-yellow-color);
+    border: var(--lm-yellow-color) 2px solid;
+    background-color: var(--transparent-color);
+}

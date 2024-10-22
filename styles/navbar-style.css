@@ -1,0 +1,134 @@
+@import url("all-colors-style.css");
+.navbar{
+    background-color: var(--lm-bg-color) !important;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+}
+
+.navbar a, p, h1, h2, h3, h4, h5, h6, button, strong{
+    font-size: calc(10px + 0.390625vw); 
+}
+
+.navbar-img-logo{
+    cursor: pointer;
+    width: 10rem;
+    display: block;
+}
+
+.icon {
+
+    color: var(--lm-white-color);
+    text-decoration: none;
+    display: none;
+}
+
+/* START OF SHRINK NAVBAR INTO ONE BTN */
+@media screen and (max-width: 1200px) {
+    .topnav{
+        display: none;
+    }
+    .icon {
+        float: inline-end;
+        color: var(--lm-white-color);
+        display: block;
+    }
+    .icon:hover{
+        color: var(--lm-yellow-color);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .topnavresponsive a.icon {
+        position: relative;
+        right: 0;
+    }
+    .topnavresponsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnavresponsive .navbar-dropdown {
+        margin: 0rem 0rem;
+    }
+  }
+
+
+/* END OF SHRINK NAVBAR INTO ONE BTN */
+
+
+/*  BUTTONS LISTING  */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar .topnav li a{
+    float: left;
+}
+.navbar .topnav .priv-style-for-margin li a{
+    float: left;
+    margin: 1.5rem 0rem;
+}
+li a {
+    display: block;
+    color: var(--lm-white-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    cursor: pointer;
+    color: var(--lm-yellow-color);
+}
+/*  END OF BUTTONS LISTING  */
+
+/*  DROPDOWN LISTING  */
+.navbar-dropdown {
+    margin: 1.4rem 0rem;
+    display: inline-block;
+}
+
+.navDropDownBtn {
+    background-color: var(--transparent-color);
+    color: var(--lm-white-color);
+    padding: 16px;
+    border: none;
+}
+
+.navDropDownBtn:hover {
+    cursor: pointer;
+    color: var(--lm-yellow-color);
+}
+
+.navDropDown-list {
+    margin: none !important;
+    border: 1px solid rgb(255, 255, 255, .5);
+    border-radius: 1rem;
+    background-color: var(--lm-bg-color);
+    display: none;
+    position: absolute;
+}
+
+.navDropDown-list a {
+    color: var(--lm-white-color);
+    text-decoration: none;
+}
+
+.navDropDown-list a:hover {
+    color: var(--lm-yellow-color);
+}
+#navDropDown.show {
+    display: block;
+}
+/*  END OF DROPDOWN LISTING  */
+
+.left-list{
+    float: inline-start;
+}
+
+
+
+
+
+
