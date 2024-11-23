@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/fonts.css">
-    <link rel="stylesheet" href="../styles/navbar-style.css">
-    <link rel="stylesheet" href="../styles/button-a-styles.css">
+    <link type="text/css" rel="stylesheet" href="styles/fonts.css">
+    <link type="text/css" rel="stylesheet" href="styles/navbar-style.css">
+    <link type="text/css" rel="stylesheet" href="styles/button-a-styles.css">
 </head>
 <body>
     <?php
@@ -25,7 +25,7 @@
         <div class="navbar-buttons">
             <ul>
                 <div class="left-list">
-                    <a onclick="window.location.href='/home';" title="Redirect to Home Page."><img src="../assets/logo-png.png" alt="" class="navbar-img-logo"></a>
+                    <a onclick="window.location.href='/home';" title="Redirect to Home Page."><img src="/assets/logo-png.png" alt="" class="navbar-img-logo"></a>
                 </div>
                 <button onclick="window.location.href='/login-page';" class="btn-log-sign" title="Click to Log in or Sign in now.">Log in | Sign up</button>
                 <br><br><br><br><br><br><hr>
@@ -52,6 +52,6 @@
             </ul>
         </div>
     </div>
-    <script src="../javascript/navbar.js" type="text/javascript"></script> 
+    <script src="/javascript/navbar.js" type="text/javascript"></script> 
 </body>
 </html>

@@ -22,3 +22,12 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+  function changeNavbarPosition(page) {
+    const navbar = document.querySelector('.navbar');
+    if (page === 'book-appointment') {
+        navbar.style.position = 'relative';
+    } else {
+        navbar.style.position = 'static';
+    }
+}

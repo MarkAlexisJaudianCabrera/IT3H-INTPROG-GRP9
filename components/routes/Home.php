@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    $isLoggedIn = isset($_SESSION['admin']); // Replace 'user' with your session variable for logged-in users.
+    $isRoleLoggedIn = isset($_SESSION['role']);
+    //$isRoleLoggedIn = 'admin';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +12,7 @@
     <title>Health Care Portal</title>
     <link rel="icon" type="image/png" href="/assets/logo-ico.ico">
     <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="/styles/home-style.css">
     <link rel="stylesheet" href="/styles/navbar-style.css">
 </head>
 <body>
@@ -15,22 +22,26 @@
         ?>
     </div>
     <br>
-    <div class="" style="margin-top:10rem;">
+    <div class="" style="margin-top:2rem;">
         <div class="Home">
+            <div class="home-welcome-msg">
+                <?php
+                    if ($isLoggedIn === 'admin'){
+                        echo 'Greetings Admin!';
+                    }
+                    else if ($isLoggedIn === 'Patient'){
+                        echo 'Greetings Patient!';
+                    }
+                    else {
+                        echo 'Welcome to Our Healthcare Portal';
+                    }
+                ?>
+                <h3>Your Health, <b>our Priority.</b></h3>
+                <button onclick="window.location.href='/health-conditions';" class="button">Explore Now</button>
+            </div>
+            <br>
             <div class="home-hero-img">
                 <img src="/assets/health-doctor.png" alt="">
-            </div>
-            <div class="home-welcome-msg">
-            <!-- A warm and inviting greeting, highlighting the portal's purpose and benefits. -->
-            </div>
-            <div class="home-key-features">
-            <!-- Briefly outline the portal's core services (e.g., doctor directory, appointment scheduling, health information). -->
-            </div>
-            <div class="home-testimonials">
-            <!-- Showcase positive feedback from satisfied users. -->
-            </div>
-            <div class="call-to-action">
-            <!-- Encourage visitors to explore the portal or book an appointment. -->
             </div>
         </div>
     </div>

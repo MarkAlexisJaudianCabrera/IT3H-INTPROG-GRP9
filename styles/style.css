@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
+@import url("all-colors-style.css");
 *{
    font-family: 'Poppins', sans-serif;
    margin:0; padding:0;
@@ -28,7 +28,7 @@
 
 .container .content h3 span{
    background: crimson;
-   color:#fff;
+   color:var(--lm-white-color);
    border-radius: 5px;
    padding:0 15px;
 }
@@ -52,7 +52,7 @@
    padding:10px 30px;
    font-size: 20px;
    background: #333;
-   color:#fff;
+   color:var(--lm-white-color);
    margin:0 5px;
    text-transform: capitalize;
 }
@@ -68,14 +68,14 @@
    justify-content: center;
    padding:20px;
    padding-bottom: 60px;
-   background: #eee;
+   background: var(--lm-white-color);
 }
 
 .form-container form{
    padding:20px;
    border-radius: 5px;
    box-shadow: 0 5px 10px rgba(0,0,0,.1);
-   background: #fff;
+   background: var(--lm-white-color);
    text-align: center;
    width: 500px;
 }
@@ -93,12 +93,12 @@
    padding:10px 15px;
    font-size: 17px;
    margin:8px 0;
-   background: #eee;
+   background: var(--lm-white-color);
    border-radius: 5px;
 }
 
 .form-container form select option{
-   background: #fff;
+   background: var(--lm-white-color);
 }
 
 .form-container form .form-btn{
@@ -111,7 +111,7 @@
 
 .form-container form .form-btn:hover{
    background: crimson;
-   color:#fff;
+   color:var(--lm-white-color);
 }
 
 .form-container form p{
@@ -128,7 +128,7 @@
    margin:10px 0;
    display: block;
    background: crimson;
-   color:#fff;
+   color:var(--lm-white-color);
    border-radius: 5px;
    font-size: 20px;
    padding:10px;

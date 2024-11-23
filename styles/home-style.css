@@ -1,0 +1,55 @@
+@import url("all-colors-style.css");
+.Home .home-hero-img{
+    float: right;
+    margin-right: 2rem;
+}
+.Home .home-hero-img img{
+    max-width: 100% !important;
+    max-height: 100% !important;
+    border-radius: 1rem;
+    border: 1px solid var(--lm-black-color);
+}
+
+.Home .home-welcome-msg{
+    float: left;
+    margin-top: 8rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+}
+.Home .home-welcome-msg h3{
+    font-size: 3rem;
+    max-width: 100% !important;
+    color: var(--lm-red-color);
+}
+.Home .home-welcome-msg h3 b{
+    color: var(--lm-agree-btn-color);
+}
+.Home .home-welcome-msg button{
+    color: var(--lm-white-color);
+    background-color: var(--lm-bg-color);
+    font-weight: bold;
+    size: 1rem;
+    border-radius: .5rem;
+    border: var(--lm-white-color) 2px solid;
+    padding: 1rem;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+    margin: none !important;
+}
+.Home .home-welcome-msg button:hover{
+    cursor: pointer;
+    color: var(--lm-yellow-color);
+    border: var(--lm-yellow-color) 2px solid;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+}
+
+@media screen and (max-width: 1200px){
+    .Home .home-welcome-msg{
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }  
+    .Home .home-hero-img img{
+        margin-bottom: 2rem;
+    }
+}
+

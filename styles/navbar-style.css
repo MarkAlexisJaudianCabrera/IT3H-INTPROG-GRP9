@@ -1,9 +1,12 @@
 @import url("all-colors-style.css");
 .navbar{
     background-color: var(--lm-bg-color) !important;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 1rem;
     box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+    position: relative; /* or fixed, if needed */
+    z-index: 1000;
+    border-bottom: var(--lm-white-color) 2px solid;
 }
 
 .navbar a, p, h1, h2, h3, h4, h5, h6, button, strong{
@@ -17,7 +20,6 @@
 }
 
 .icon {
-
     color: var(--lm-white-color);
     text-decoration: none;
     display: none;
@@ -28,8 +30,21 @@
     .topnav{
         display: none;
     }
+    .navbar{
+        overflow: visible;
+    }
+    .navbar-dropdown{
+        z-index: 1100;
+    }
+    .navDropDown-list{
+        z-index: 1200;
+    }
     .icon {
-        float: inline-end;
+        border-radius: 0rem 0rem 1rem 1rem;
+        padding-left: 96%;
+        padding-right: 1rem;
+        margin-right: 2rem;
+        background-color: var(--lm-bg-color);
         color: var(--lm-white-color);
         display: block;
     }
@@ -87,6 +102,7 @@ li a {
 .navbar-dropdown {
     margin: 1.4rem 0rem;
     display: inline-block;
+    z-index: 1100;
 }
 
 .navDropDownBtn {
@@ -108,6 +124,7 @@ li a {
     background-color: var(--lm-bg-color);
     display: none;
     position: absolute;
+    z-index: 1200;
 }
 
 .navDropDown-list a {
@@ -127,8 +144,6 @@ li a {
     float: inline-start;
 }
 
-
-
-
-
-
+.navbar, .navbar a, .navbar button {
+    pointer-events: auto;
+}

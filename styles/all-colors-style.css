@@ -1,7 +1,9 @@
 :root{
     --lm-bg-color: rgba(1,57,108,100%);
     --lm-yellow-color: #E3D01F;
-    --lm-white-color: #fff;
+    --lm-white-color: #D8EFF7;
     --lm-black-color: #000;
+    --lm-agree-btn-color: #54d300e3;
+    --lm-red-color: #EB1E25;
     --transparent-color: rgb(255, 255, 255, 0);
 }

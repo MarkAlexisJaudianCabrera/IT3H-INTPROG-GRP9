@@ -19,3 +19,80 @@
     border: var(--lm-yellow-color) 2px solid;
     background-color: var(--transparent-color);
 }
+
+.log-sign-bookapp{
+    background-color: var(--lm-bg-color);
+}
+.log-sign-bookapp:hover{
+    background-color: var(--lm-bg-color);
+}
+
+/* START of Book an Appointment Page */
+.bookapp-submit-btn{
+    color: var(--lm-white-color);
+    background-color: var(--lm-bg-color);
+    font-weight: bold;
+    size: 1rem;
+    border-radius: .5rem;
+    border: var(--lm-black-color) 2px solid;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+    margin: 0rem 1rem;
+}
+.bookapp-submit-btn:hover{
+    cursor: pointer;
+    color: var(--lm-black-color);
+    border: var(--lm-black-color) 2px solid;
+    background-color: var(--lm-agree-btn-color);
+}
+/* END of Book an Appointment Page */
+
+/* START of Health Condition Page */
+.HealthCon-addnewCon{
+    color: var(--lm-white-color);
+    background-color: var(--lm-bg-color);
+    font-weight: bold;
+    size: 1rem;
+    border-radius: .5rem;
+    border: var(--lm-white-color) 2px solid;
+    padding: 1rem;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+    margin: none !important;
+
+    bottom: 8%;
+    right: 1%;
+    position: fixed;
+}
+.HealthCon-addnewCon:hover{
+    cursor: pointer;
+    color: var(--lm-yellow-color);
+    border: var(--lm-yellow-color) 2px solid;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+}
+.HealthCon-addeditCon{
+    color: var(--lm-white-color);
+    background-color: var(--lm-bg-color);
+    font-weight: bold;
+    size: 1rem;
+    border-radius: .5rem;
+    border: var(--lm-white-color) 2px solid;
+    padding: 1rem;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+    margin: none !important;
+
+    bottom: 1%;
+    right: 1%;
+    position: fixed;
+}
+.HealthCon-addeditCon:hover{
+    cursor: pointer;
+    color: var(--lm-yellow-color);
+    border: var(--lm-yellow-color) 2px solid;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+}
+/* END of Health Condition Page */
+
+
+     

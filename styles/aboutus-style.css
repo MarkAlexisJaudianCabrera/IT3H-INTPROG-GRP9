@@ -1,0 +1,18 @@
+@import url("all-colors-style.css");
+.AboutUs{
+    margin-bottom: 5rem;
+}
+.AboutUs h4{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: .8rem;
+}
+.AboutUs p, .AboutUs ul{
+    margin: 0 8rem;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+.AboutUs ul{
+    margin-top: 1rem;
+}
