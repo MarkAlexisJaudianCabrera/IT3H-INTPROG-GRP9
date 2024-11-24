@@ -1,0 +1,42 @@
+@import url("all-colors-style.css");
+.faq-container {
+    margin: 2rem;
+}
+.faq-container h1{
+    font-size: 1.5vw;
+}
+.faq-card{
+    border: 1px var(--lm-black-color) solid;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+    background-color: var(--lm-bg-color);
+    color: var(--lm-white-color);
+}
+.faq-card a p{
+    float: right;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+.faq-card a p i.active{
+    transform: rotate(180deg);
+}
+.faq-card:hover{
+    cursor: pointer;
+}
+.faq-titlec{
+    float: left;
+    color: var(--lm-white-color);
+}
+.faq-titlec:hover{
+    color: var(--lm-yellow-color);
+}
+.faq-content{
+    display: none;
+    margin-top: 2rem;
+}
+.active{
+    display: block;
+    margin-top: 1rem;
+}
+

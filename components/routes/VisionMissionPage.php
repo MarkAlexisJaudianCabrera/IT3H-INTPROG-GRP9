@@ -18,7 +18,7 @@
     <br>
     <div class="" style="margin:2rem 2rem;">
         <!-- contents dito -->
-         <div class="VisMis">
+        <div class="VisMis">
             <div class="VisMis-title">
                 <h4>MISSION</h4>
             </div>
@@ -30,7 +30,20 @@
                     resources, and services.
                 </p>
             </div>
-         </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="VisMis-title">
+                <h4>VISION</h4>
+            </div>
+            <div class="VisMis-desc">
+                <p>
+                    To create a user-friendly digital platform that improves access to healthcare information 
+                    and resources for students and the local community.
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

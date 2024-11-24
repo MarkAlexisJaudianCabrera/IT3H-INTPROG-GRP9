@@ -21,7 +21,7 @@ function myFunction() {
     } else {
       x.className = "topnav";
     }
-  }
+}
 
   function changeNavbarPosition(page) {
     const navbar = document.querySelector('.navbar');
