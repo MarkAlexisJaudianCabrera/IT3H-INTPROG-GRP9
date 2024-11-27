@@ -32,7 +32,23 @@
             break;
 
         case '/login-page':
-            require __DIR__ . $viewDir . '/login-p/login-page.php';
+            require __DIR__ . $viewDir . '/login-p/index.html';
+            break;
+        
+        case '/login-success':
+            require __DIR__ . $viewDir . '/login-p/success.html';
+            break;
+
+        case '/login-err':
+            require __DIR__ . $viewDir . '/login-p/error.html';
+            break;
+
+        case '/login-now':
+            require __DIR__ . $viewDir . '/login-p/login.php';
+            break;
+
+        case '/signup-now':
+            require __DIR__ . $viewDir . '/login-p/signup.html';
             break;
     
         default:

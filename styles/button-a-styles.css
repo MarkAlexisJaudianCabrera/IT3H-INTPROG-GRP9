@@ -22,6 +22,7 @@
 
 .log-sign-bookapp{
     background-color: var(--lm-bg-color);
+    margin-right: 5rem;
 }
 .log-sign-bookapp:hover{
     background-color: var(--lm-bg-color);
@@ -46,6 +47,27 @@
     color: var(--lm-black-color);
     border: var(--lm-black-color) 2px solid;
     background-color: var(--lm-agree-btn-color);
+}
+.BookApp-checkapp{
+    color: var(--lm-white-color);
+    background-color: var(--lm-bg-color);
+    font-weight: bold;
+    size: 1rem;
+    border-radius: .5rem;
+    border: var(--lm-white-color) 2px solid;
+    padding: 1rem;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
+    margin: none !important;
+
+    bottom: 1%;
+    right: 1%;
+    position: fixed;
+}
+.BookApp-checkapp:hover{
+    cursor: pointer;
+    color: var(--lm-yellow-color);
+    border: var(--lm-yellow-color) 2px solid;
+    box-shadow: 0 4px 1rem rgba(134, 133, 133, 0.5);
 }
 /* END of Book an Appointment Page */
 

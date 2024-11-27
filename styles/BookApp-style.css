@@ -37,6 +37,7 @@
     z-index: 1000;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .overlay-content {
     width: 20rem;

@@ -1,7 +1,52 @@
 <?php
-    session_start();
+    require 'config.php';
+
+    if(isset($_POST["submit"])){
+        // Patient Information:
+        $lastname = $_POST["lastname"];
+        $firstname = $_POST["firstname"];
+        $midname = $_POST["midname"];
+        $suffix = $_POST["suffix"];
+
+        $contnum = $_POST["contnum"];
+        $emailadd = $_POST["emailadd"];
+
+        $gender = $_POST["gender"];
+        $dateofbirth = $_POST["datebirth"];
+
+        $address = $_POST["address"];
+
+        // Appointment Details:
+        $datetime = $_POST["datetime"];
+        $reasonvisit = $_POST["reasonvisit"];
+        $insurance_information = $_POST["insurance_information"];
+        $insurance_document = $_POST["insurance_document"];
+
+        //Additional Information (Optional):
+        $EmerContName = $_POST["EmerContName"];
+        $EmerContNum = $_POST["EmerContNum"];
+        $MedHis = $_POST["MedHis"];
+        $PrevCon = $_POST["PrevCon"];
+
+
+
+        $duplicate = mysqli_query($conn, "SELECT * FROM patientinfos_tb WHERE emailadd = '$emailadd' OR contnum = '$contnum'");
+        if(mysqli_num_rows($duplicate) > 0){
+            $query = "INSERT INTO patientinfos_tb VALUES('','$lastname','$firstname','$midname', '$suffix', '$contnum', '$emailadd' , '$gender' , '$dateofbirth' , '$address' , '$datetime' , '$reasonvisit' , '$insurance_information' , '$insurance_document' , '$EmerContName' , '$EmerContNum' , '$MedHis' , '$PrevCon')";
+            mysqli_query($conn, $query);
+            echo "<script> alert('Your Appointment was Successfully Updated') </script>";
+        }else{
+            $query = "INSERT INTO patientinfos_tb VALUES('','$lastname','$firstname','$midname', '$suffix', '$contnum', '$emailadd' , '$gender' , '$dateofbirth' , '$address' , '$datetime' , '$reasonvisit' , '$insurance_information' , '$insurance_document' , '$EmerContName' , '$EmerContNum' , '$MedHis' , '$PrevCon')";
+            mysqli_query($conn, $query);
+            echo "<script> alert('Your Appointment was Successfully Booked') </script>";
+        
+        }
+    }
+    // if ($conn) {
+    //     $conn->close();
+    // }
     //$isLoggedIn = isset($_SESSION['user']); // Replace 'user' with your session variable for logged-in users.
-    $isLoggedIn = 'patient';
+    //$isLoggedIn = 'admin';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,6 +87,9 @@
                     <!-- MIDDLE NAME -->
                     <label for="midname">Middle Name : </label>
                     <input class="border-input card-midname" type="text" name="midname" id="midname" required value=""> 
+                    <!-- SUFFIX NAME -->
+                    <label for="suffix">Suffix : </label>
+                    <input class="border-input card-suffix" type="text" name="suffix" id="suffix" value=""> 
                 </div>
 
                 <br> <br>
@@ -71,7 +119,7 @@
 
                     <!-- DATE OF BIRTH -->
                     <label for="dateofbirth">Date of Birth : </label>
-                    <input class="border-input" type="date" name="dateofbirth" id="dateofbirth" required value="">
+                    <input class="border-input" type="date" name="datebirth" id="datebirth" required value="">
 
                     <br> <br>
 
@@ -137,17 +185,22 @@
     </div>
     
     <?php
-        if ($isLoggedIn === 'guest'){
+        if ($isLoggedIn !== 'admin' && $isLoggedIn !== 'patient'){
             // <!-- Main Content -->
             echo '<div class="protected-content">';
             // <!-- Overlay for when user is not logged in -->
                 echo '<div class="overlay" id="loginOverlay" style="display: flex;">';
                     echo '<div class="overlay-content">';
                         echo '<h2>Click to Book an appointment now!</h2>';
-                        echo '<button onclick="window.location.href="/login-page";" class="btn-log-sign log-sign-bookapp" title="Click to Log in or Sign in now.">Log in | Sign up</button>';
+                        echo '<a href="/login-page";" class="btn-log-sign log-sign-bookapp" title="Click to Log in or Sign in now.">Log in | Sign up</a>';
                     echo '</div>';
                 echo '</div>';
             echo '</div>';
+        }
+
+
+        if ($isLoggedIn === 'admin'){
+            echo '<button onclick="CheckApp()" class="BookApp-checkapp">Check Appointments</button>';
         }
     ?>
 </body>
