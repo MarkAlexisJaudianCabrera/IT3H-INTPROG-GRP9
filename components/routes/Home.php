@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    //session_start();
     $isLoggedIn = isset($_SESSION['admin']); // Replace 'user' with your session variable for logged-in users.
     $isRoleLoggedIn = isset($_SESSION['role']);
     //$isRoleLoggedIn = 'admin';

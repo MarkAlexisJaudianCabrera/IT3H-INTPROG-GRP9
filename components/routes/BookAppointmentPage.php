@@ -45,8 +45,8 @@
     // if ($conn) {
     //     $conn->close();
     // }
-    //$isLoggedIn = isset($_SESSION['user']); // Replace 'user' with your session variable for logged-in users.
-    //$isLoggedIn = 'admin';
+    //$isLoggedIn = isset($_SESSION['user']); 
+    $isLoggedIn = 'guest';
 ?>
 <!DOCTYPE html>
 <html lang="en">
